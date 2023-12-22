@@ -1,0 +1,45 @@
+/* Liste des liens de navigation */
+#nav-list {
+    display: flex;
+    margin-left: 40vw;
+    gap: 4vw;
+    list-style-type: none;
+}
+
+/* Barre nav, sert à délimiter la zone de la liste */
+nav {
+    margin-top: -16px;
+    left: 0;
+    background-color: color-mix(in srgb, rgb(71, 71, 212) 50%, rgb(109, 0, 109) 30%);
+}
+
+/* image de la liste avec les liens de navigation */
+#nav-list img {
+    display: inline-block;
+    position: relative;
+}
+
+/* Home icon : \e800 */
+#nav-list img::after {
+    content: "\2639" " " attr(alt);
+    margin-left: -75px;
+    text-decoration: underline rgb(100, 100, 100);
+    color: rgb(100, 100, 100);
+}
+
+@media screen and (max-width:600px) {
+    nav {
+        margin-top: 624px;
+    }
+
+    @media screen and (min-height:500px) {
+        nav {
+            margin-bottom: 80px;
+        }
+    }
+
+    #nav-list {
+        gap: 17vw;
+        margin-left: 20vw;
+    }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A new app">
+    <meta name="keywords" content="A new app">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/table.css">
+    <link rel="stylesheet" href="styles/config.css">
+    <link rel="stylesheet" href="styles/page.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="3600,URL=./app.html" />
+    <title>My app</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="page1"><img src="images/svgexport-13.svg" alt="Index #1" onerror="doSomething(this)" /></a></li>
+                <li><a href="page2"><img src="images/svgexport-1.svg" alt="Index #2" onerror="doSomething(this)" /></a></li>
+                <li><a href="page3"><img src="images/svgexport-11.svg" alt="Index #3" onerror="doSomething(this)" /></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="DIV-MAIN-TOP-CONTENT" class="DIV-MAIN-SEPARATORS">
+            <h1 id="APPTITLE">SnipeStreak</h1>
+            <article class="top-article-title">
+                <h2>What's new ? </h2>
+                <hr>
+                <article class="top-article-content">
+                    <p>A new maj has occured yesterday, <br> check in this article, what is new ?</p>
+                </article>
+            </article>
+        <!-- ICI SERA UN TABLEAU REMPLIS D'ARTICLES QUI EMMENERONT DANS D'AUTRES PAGES -->
+        </div>
+        <div id="DIV-MAIN-CENTER-CONTENT" class="DIV-MAIN-SEPARATORS">
+            <!-- ICI SERA DES CONTENUS VIDÉOS, ET LIVES -->
+        </div>
+        <div id="DIV-MAIN-BOTTOM-CONTENT" class="DIV-MAIN-SEPARATORS">
+            <!-- ICI SERA LE CONTENU DU COMPTE, MESSAGES, VIDÉOS POSTÉES ET LIVES -->
+        </div>
+    </main>
+    <footer>
+        <!-- ICI SERA LES CRÉDITS DU SITE, LES PARAMÉTRES DE THÈMES, AINSI QUE D'AUTRES LIENS CACHÉS DU SITE -->
+    </footer>
+    <script>
+        function doSomething(elem) {
+            var alt = document.createTextNode(elem.getAttribute('alt'));
+            elem.parentNode.insertBefore(alt, elem);
+            elem.parentNode.removeChild(elem);
+            elem.setAttribute('alt', 'color:black;')
+        }
+    </script>
+    <script>
+
+    </script>
+</body>
+
+</html>

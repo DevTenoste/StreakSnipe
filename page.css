@@ -1,0 +1,24 @@
+body{
+    margin: 0 auto;
+    background-color: var(--dark-web-theme);
+    color: var(--dark-web-color);
+}
+
+#APPTITLE{
+    font-family: var(--dark-web-font2);
+    text-align: center;
+    text-shadow: 4px 1px 0px black;
+}
+
+.top-article-title{
+    background-color: var(--article-background-color);
+    border: 2px outset;
+    width: fit-content;
+    height: 45%;
+    font-family: var(--dark-web-font1);
+    border-radius: 5px;
+}
+
+.top-article-content{
+    font-family: var(--dark-web-font3);
+}
